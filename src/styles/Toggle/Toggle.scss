@@ -1,44 +1,75 @@
-.toggle-container {
+.aboutContainer {
+  margin-top: 42px;
   margin-bottom: 20px;
 }
 
+.toggle-container {
+  width: 100%;
+}
+
 .toggle-button {
+  font-weight: bold;
+  font-size: 24px;
+  width: 100%;
   padding: 10px 20px;
   cursor: pointer;
   background-color: #ff6060;
   color: white;
   border: none;
   border-radius: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 28px;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 2;
 
   &::after {
-    content: ">";
+    content: "";
     display: inline-block;
+    width: 20px;
+    height: 20px;
     margin-right: 10px;
+    background-image: url("../../assets/icone_chevron.png");
+    background-size: contain;
+    background-repeat: no-repeat;
     transition: transform 0.3s ease;
-    transform: rotate(270deg); /* Pointe vers le haut */
+    transform: rotate(0deg);
   }
 
   &.open::after {
-    transform: rotate(90deg); /* Pointe vers le bas */
+    transform: rotate(-180deg); /* Pointe vers le bas */
   }
 }
 
 .toggle-content {
+  padding-right: 15px;
+  padding-left: 15px;
+  font-weight: 500;
   overflow: hidden;
-  transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
   max-height: 0;
   opacity: 0;
+  transform: translateY(-30px); /* Décalage initial vers le bas */
+  position: relative;
+  top: -25px;
+  transition: max-height 0.15s ease-out, opacity 0.15s ease-out,
+    transform 0.15s ease-out;
+
   &.open {
     max-height: 500px; // Ajustez selon le contenu
     opacity: 1;
+    transform: translateY(0); /* Ramène le texte à sa position normale */
+    transition: transform 0.25s ease-in;
+    background-color: #fbfbfb;
+    position: relative;
+    border-radius: 0 0 10px 10px;
+    top: -25px;
+    z-index: 1;
   }
   &.closed {
     max-height: 0;
     opacity: 0;
+    transform: translateY(-30px); /* Décalage initial vers le bas */
+    transform: 0.15s ease-out;
   }
 }
