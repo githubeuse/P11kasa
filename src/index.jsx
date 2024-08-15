@@ -6,13 +6,6 @@ import About from "./pages/About";
 import FicheLogement from "./pages/FicheLogement";
 import Error from "./pages/Error";
 
-// import Logements from "./pages/Logements";
-// import Card from "./components/Card";
-
-// import './index.css';
-// import reportWebVitals from './reportWebVitals';
-// import App from './App';
-
 const container = document.getElementById("root");
 const root = createRoot(container);
 root.render(
