@@ -1,0 +1,32 @@
+.slideshowContainer {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.picture {
+  width: 1240px;
+  height: 415px;
+  object-fit: cover;
+  object-position: center center;
+  position: relative;
+  border-radius: 25px;
+}
+
+.previousButton,
+.nextButton {
+  height: 80px;
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.previousButton {
+  left: 10%; /* Ajuste cette valeur selon tes besoins */
+}
+
+.nextButton {
+  right: 10%; /* Ajuste cette valeur selon tes besoins */
+}

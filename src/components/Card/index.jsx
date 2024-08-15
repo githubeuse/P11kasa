@@ -5,6 +5,7 @@ import "../../styles/Card/Card.css";
 
 import Toggle from "../../components/Toggle";
 import Ratings from "../../components/Ratings";
+import Slideshow from "../../components/Slideshow";
 
 function Card() {
   const { id } = useParams();
@@ -18,7 +19,7 @@ function Card() {
 
   return (
     <div>
-      <img className="cover" src={logement.cover} alt={logement.title} />
+      <Slideshow pictures={logement.pictures} title={logement.title} />
       <div className="houseInfosContainer">
         <h1 className="logementTitle">{logement.title}</h1>
         <div className="hostInfos">
