@@ -1,8 +1,9 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
-import "../../styles/Banner/Banner.css";
 import homeBanner from "../../assets/home_banner.png";
 import aboutBanner from "../../assets/about_banner.png";
+
+import "../../styles/Banner/Banner.css";
 
 function Banner() {
   const location = useLocation();

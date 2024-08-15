@@ -29,4 +29,8 @@
   text-decoration: underline;
 }
 
+.navigation a.active {
+  text-decoration: underline;
+}
+
 /*# sourceMappingURL=Header.css.map */

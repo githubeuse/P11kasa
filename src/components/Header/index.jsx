@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import headerLogo from "../../assets/header_logo.svg";
 import "../../styles/Header/Header.css";
 
@@ -8,8 +8,18 @@ function Header() {
     <div className="headerContainer">
       <img src={headerLogo} className="headerLogo" alt="Logo Kasa" />
       <nav className="navigation">
-        <Link to="/">Accueil</Link>
-        <Link to="/about">A Propos</Link>
+        <NavLink
+          to="/"
+          className={({ isActive }) => (isActive ? "active" : "")}
+        >
+          Accueil
+        </NavLink>
+        <NavLink
+          to="/about"
+          className={({ isActive }) => (isActive ? "active" : "")}
+        >
+          A Propos
+        </NavLink>
       </nav>
     </div>
   );
