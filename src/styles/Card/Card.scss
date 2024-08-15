@@ -1,3 +1,15 @@
 .cover {
   height: 15vh;
 }
+
+.houseTogglesContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.equipmentsList {
+  list-style-type: none;
+  padding-inline-start: 0px;
+}

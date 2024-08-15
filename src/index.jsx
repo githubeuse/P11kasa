@@ -3,9 +3,11 @@ import { createRoot } from "react-dom/client";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Logements from "./pages/Logements";
-import Card from "./components/Card";
+import FicheLogement from "./pages/FicheLogement";
 import Error from "./pages/Error";
+
+// import Logements from "./pages/Logements";
+// import Card from "./components/Card";
 
 // import './index.css';
 // import reportWebVitals from './reportWebVitals';
@@ -19,8 +21,8 @@ root.render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/logements" element={<Logements />} />
-        <Route path="/logements/:id" element={<Card />} />
+        {/* <Route path="/logements" element={<Logements />} /> */}
+        <Route path="/fiche_logement/:id" element={<FicheLogement />} />
         <Route path="*" element={<Error />} />
       </Routes>
     </Router>

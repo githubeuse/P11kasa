@@ -15,7 +15,9 @@ function HousesList() {
               className="coverCard"
             />
             <div className="titleCard">
-              <Link to={`/logements/${logement.id}`}>{logement.title}</Link>
+              <Link to={`/fiche_logement/${logement.id}`}>
+                {logement.title}
+              </Link>
             </div>
           </div>
         ))}
