@@ -1,0 +1,33 @@
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 25px 100px 50px 100px;
+}
+
+.headerLogo {
+  width: 210px;
+  height: 68px;
+}
+
+.navigation {
+  width: 25%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+}
+
+.navigation a:link,
+.navigation a:visited {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+.navigation a:hover,
+.navigation a:active {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=Header.css.map */

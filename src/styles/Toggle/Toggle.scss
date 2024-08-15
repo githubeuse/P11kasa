@@ -1,0 +1,44 @@
+.toggle-container {
+  margin-bottom: 20px;
+}
+
+.toggle-button {
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #ff6060;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &::after {
+    content: ">";
+    display: inline-block;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+    transform: rotate(270deg); /* Pointe vers le haut */
+  }
+
+  &.open::after {
+    transform: rotate(90deg); /* Pointe vers le bas */
+  }
+}
+
+.toggle-content {
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+  max-height: 0;
+  opacity: 0;
+  &.open {
+    max-height: 500px; // Ajustez selon le contenu
+    opacity: 1;
+  }
+  &.closed {
+    max-height: 0;
+    opacity: 0;
+  }
+}

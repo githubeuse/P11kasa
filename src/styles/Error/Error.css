@@ -1,0 +1,32 @@
+.errorContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.h1error {
+  font-size: 288px;
+  color: #ff6060;
+  margin-block: 0;
+}
+
+.h2error {
+  font-size: 38px;
+  color: #ff6060;
+  margin-block: 0;
+  margin-top: 50px;
+}
+
+.errorP {
+  margin: 100px 0;
+  font-size: 16px;
+}
+
+.errorP a:link,
+.errorP a:visited {
+  color: black;
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=Error.css.map */
