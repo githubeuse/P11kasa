@@ -1,18 +1,21 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
 import logements from "../../datas/logements.json";
 import "../../styles/Card/Card.css";
 
 import Toggle from "../../components/Toggle";
 import Ratings from "../../components/Ratings";
 import Gallery from "../../components/Gallery";
+import Error from "../../pages/Error";
 
 function Card() {
   const { id } = useParams();
   const logement = logements.find((logement) => logement.id === id);
 
   if (!logement) {
-    return <div>Logement non trouvé</div>;
+    // return <div>Logement non trouvé</div>;
+
+    return <Navigate to="/404" element={<Error />} />;
   }
 
   const [firstName, lastName] = logement.host.name.split(" ");
