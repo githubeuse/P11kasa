@@ -12,4 +12,10 @@
   align-self: center;
 }
 
+@media (max-width: 720px) {
+  .aboutTogglesContainer {
+    margin: 20px;
+  }
+}
+
 /*# sourceMappingURL=About.css.map */
