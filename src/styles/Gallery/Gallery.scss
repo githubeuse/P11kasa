@@ -2,11 +2,12 @@
   display: flex;
   justify-content: center;
   position: relative;
+  margin: 0px 100px;
 }
 
 .picture {
-  width: 1240px;
-  height: 415px;
+  width: 100%;
+  height: 40vh;
   object-fit: cover;
   object-position: center center;
   position: relative;
@@ -24,14 +25,17 @@
 }
 
 .previousButton {
-  left: 10%;
+  left: 2%;
 }
 
 .nextButton {
-  right: 10%;
+  right: 2%;
 }
 
 @media (max-width: 720px) {
+  .slideshowContainer {
+    margin: 0 20px;
+  }
   .picture {
     width: 100%;
     height: 50vh;
@@ -40,11 +44,5 @@
   .previousButton,
   .nextButton {
     height: 24px;
-  }
-  .previousButton {
-    left: 2%;
-  }
-  .nextButton {
-    right: 2%;
   }
 }
