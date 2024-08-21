@@ -57,7 +57,7 @@
   max-height: 500px;
   opacity: 1;
   transform: translateY(0); /* Ramène le texte à sa position normale */
-  transition: transform 0.25s ease-in;
+  transition: transform 0.2s ease-in;
   background-color: #fbfbfb;
   position: relative;
   border-radius: 0 0 10px 10px;
@@ -68,7 +68,7 @@
   max-height: 0;
   opacity: 0;
   transform: translateY(-30px); /* Décalage initial vers le bas */
-  transform: 0.15s ease-out;
+  transform: 0.1s ease-out;
 }
 
 /*# sourceMappingURL=Toggle.css.map */

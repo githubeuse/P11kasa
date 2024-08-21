@@ -1,5 +1,5 @@
 import { React, useState } from "react";
-import "../../styles/Slideshow/Slideshow.css";
+import "../../styles/Gallery/Gallery.css";
 import next from "../../assets/icone_fleche_next.png";
 import previous from "../../assets/icone_fleche_previous.png";
 

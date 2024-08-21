@@ -3,6 +3,8 @@
   justify-content: space-between;
   align-items: center;
   margin: 25px 100px 50px 100px;
+  text-transform: none;
+  white-space: nowrap;
 }
 
 .headerLogo {
@@ -31,4 +33,19 @@
 
 .navigation a.active {
   text-decoration: underline;
+}
+
+@media (max-width: 720px) {
+  .headerContainer {
+    text-transform: uppercase;
+    margin: 20px;
+    margin-bottom: 31px;
+  }
+  .headerLogo {
+    width: 145px;
+  }
+  .navigation {
+    width: 50%;
+    gap: 26px;
+  }
 }

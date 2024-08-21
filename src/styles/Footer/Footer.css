@@ -14,8 +14,29 @@ footer {
 
 .footerLogo {
   width: 122px;
-  height: 39, 44px;
+  height: 39.44px;
   padding-bottom: 52px;
+}
+
+.footerParagraphs {
+  width: 163px;
+}
+
+@media (max-width: 720px) {
+  .footerLogo {
+    margin-top: 66px;
+    margin-bottom: 19px;
+    padding: 0;
+    width: 122px;
+    height: 39.44px;
+  }
+  .footerParagraphs {
+    width: 145px;
+    margin-bottom: 60px;
+  }
+  .footerParagraphs p {
+    margin-block: 0;
+  }
 }
 
 /*# sourceMappingURL=Footer.css.map */

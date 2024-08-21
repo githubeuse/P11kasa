@@ -40,3 +40,15 @@
   text-shadow: -0.5px -0.5px 0 black, 0.5px -0.5px 0 black, -0.5px 0.5px 0 black,
     0.5px 0.5px 0 black; /* AjAjoute un contour noir au texte */
 }
+
+@media (max-width: 720px) {
+  .bannerContainer {
+    margin: 0 20px;
+  }
+  .bannerText {
+    font-size: 24px;
+  }
+  .banner {
+    height: 111px;
+  }
+}

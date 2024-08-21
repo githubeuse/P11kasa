@@ -5,7 +5,7 @@ import "../../styles/Card/Card.css";
 
 import Toggle from "../../components/Toggle";
 import Ratings from "../../components/Ratings";
-import Slideshow from "../../components/Slideshow";
+import Gallery from "../../components/Gallery";
 
 function Card() {
   const { id } = useParams();
@@ -19,22 +19,31 @@ function Card() {
 
   return (
     <div>
-      <Slideshow pictures={logement.pictures} title={logement.title} />
+      <Gallery pictures={logement.pictures} title={logement.title} />
+
       <div className="houseInfosContainer">
         <h1 className="logementTitle">{logement.title}</h1>
-        <div className="hostInfos">
-          <div className="hostName">
-            <span>{firstName}</span>
-            <span>{lastName}</span>
-          </div>{" "}
-          <img
-            src={logement.host.picture}
-            alt={logement.host.name}
-            className="hostPic"
-          />
-        </div>
         <p className="logementLocation">{logement.location}</p>
-        <p></p>
+      </div>
+
+      <div className="container">
+        <div className="container1">
+          <div className="hostInfos">
+            <div className="hostName">
+              <span>{firstName}</span>
+              <span>{lastName}</span>
+            </div>
+            <img
+              src={logement.host.picture}
+              alt={logement.host.name}
+              className="hostPic"
+            />
+          </div>
+
+          <div className="ratingContainer">
+            <Ratings rating={logement.rating} />
+          </div>
+        </div>
         <p className="tagsContainer">
           {logement.tags.map((tag, index) => (
             <button key={index} className="tag">
@@ -42,9 +51,6 @@ function Card() {
             </button>
           ))}
         </p>
-        <div className="ratingContainer">
-          <Ratings rating={logement.rating} />
-        </div>
       </div>
       <div className="houseTogglesContainer">
         <Toggle title="Description">
