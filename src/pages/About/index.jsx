@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../../components/Header";
 import Banner from "../../components/Banner";
+import aboutBanner from "../../assets/about_banner.png";
 import Footer from "../../components/Footer";
 import Toggle from "../../components/Toggle";
 import "../../styles/About/About.css";
@@ -9,7 +10,7 @@ function About() {
   return (
     <div>
       <Header />
-      <Banner />
+      <Banner image={aboutBanner} />
       <div className="aboutContainer">
         <div className="aboutTogglesContainer">
           <Toggle title="Fiabilité">

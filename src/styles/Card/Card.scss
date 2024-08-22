@@ -1,5 +1,12 @@
-.cover {
-  height: 15vh;
+.houseInfosContainer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 76px;
+  margin: 0 100px;
+  // display: grid;
+  // grid-template-columns: 3fr 1fr;
+  // align-items: center;
 }
 
 .logementTitle {
@@ -9,20 +16,11 @@
   margin-block-end: 0em;
 }
 
-.houseInfosContainer {
+.upContainer {
   display: flex;
   flex-direction: column;
   position: relative;
-  height: 76px;
-  // display: grid;
-  // grid-template-columns: 3fr 1fr;
-  // align-items: center;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  position: relative;
+  margin: 0 100px;
 }
 
 .container1 {
@@ -82,7 +80,7 @@
 .houseTogglesContainer {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
+  margin: 20px 100px 0 100px;
   gap: 20px;
 }
 
@@ -95,6 +93,11 @@
   .houseInfosContainer {
     display: flex;
     flex-direction: column;
+    margin: 0 20px;
+  }
+
+  .container {
+    margin: 0 20px;
   }
 
   .container {

@@ -29,7 +29,7 @@ function Card() {
         <p className="logementLocation">{logement.location}</p>
       </div>
 
-      <div className="container">
+      <div className="upContainer">
         <div className="container1">
           <div className="hostInfos">
             <div className="hostName">

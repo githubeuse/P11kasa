@@ -9,15 +9,17 @@ function Toggle({ title, children }) {
   };
 
   return (
-    <div className="toggle-container">
-      <button
-        onClick={toggleContent}
-        className={`toggle-button ${isOpen ? "open" : ""}`}
-      >
-        {title}
-      </button>
-      <div className={`toggle-content ${isOpen ? "open" : "closed"}`}>
-        {children}
+    <div className="tContainer">
+      <div className="toggle-container">
+        <button
+          onClick={toggleContent}
+          className={`toggle-button ${isOpen ? "open" : ""}`}
+        >
+          {title}
+        </button>
+        <div className={`toggle-content ${isOpen ? "open" : "closed"}`}>
+          {children}
+        </div>
       </div>
     </div>
   );

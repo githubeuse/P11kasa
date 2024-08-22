@@ -1,13 +1,4 @@
 @charset "UTF-8";
-.aboutContainer {
-  margin-top: 42px;
-  margin-bottom: 20px;
-}
-
-.toggle-container {
-  width: 100%;
-}
-
 .toggle-button {
   font-weight: bold;
   font-size: 24px;

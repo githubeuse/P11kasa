@@ -5,6 +5,7 @@ import React from "react";
 
 import Header from "../../components/Header";
 import Banner from "../../components/Banner";
+import homeBanner from "../../assets/home_banner.png";
 import HousesList from "../../components/HousesList";
 import Footer from "../../components/Footer";
 // import '../styles/Cart.css'
@@ -17,7 +18,7 @@ function Home() {
         <Header />
       </div>
       <div>
-        <Banner />
+        <Banner image={homeBanner} />
       </div>
 
       <HousesList />
