@@ -47,14 +47,17 @@ function Card() {
             <Ratings rating={logement.rating} />
           </div>
         </div>
-        <p className="tagsContainer">
-          {logement.tags.map((tag, index) => (
-            <button key={index} className="tag">
-              {tag}
-            </button>
-          ))}
-        </p>
+        <div className="tagsContainer">
+          <p>
+            {logement.tags.map((tag, index) => (
+              <button key={index} className="tag">
+                {tag}
+              </button>
+            ))}
+          </p>
+        </div>
       </div>
+
       <div className="houseTogglesContainer">
         <Toggle title="Description">
           <p>{logement.description}</p>

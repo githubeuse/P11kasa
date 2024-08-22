@@ -18,7 +18,7 @@ function Home() {
         <Header />
       </div>
       <div>
-        <Banner image={homeBanner} />
+        <Banner image={homeBanner} text=" Chez vous, partout et ailleurs" />
       </div>
 
       <HousesList />

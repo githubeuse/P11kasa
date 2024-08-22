@@ -14,6 +14,13 @@
   font-weight: 500;
   color: #ff6060;
   margin-block-end: 0em;
+  width: 60%;
+}
+
+.logementLocation {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0;
 }
 
 .upContainer {
@@ -50,16 +57,11 @@
   border-radius: 50%;
 }
 
-.logementLocation {
-  font-size: 18px;
-  font-weight: 500;
-  padding: 0;
-}
-
 .tagsContainer {
   display: flex;
   gap: 10px;
-  margin-top: 50px;
+  margin-top: 30px;
+  // margin-top: 90px;
 }
 
 .tag {
@@ -89,19 +91,28 @@
   padding-inline-start: 0px;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 1020px) {
+  .houseInfosContainer {
+    margin-bottom: 20%;
+  }
+
+  .houseTogglesContainer {
+    margin-top: 120px;
+  }
+
+  .logementTitle {
+    width: 100%;
+  }
   .houseInfosContainer {
     display: flex;
     flex-direction: column;
     margin: 0 20px;
   }
 
-  .container {
+  .upContainer {
     margin: 0 20px;
-  }
-
-  .container {
     flex-direction: column-reverse;
+    margin-top: 50px;
   }
 
   .container1 {
@@ -115,5 +126,6 @@
   .houseTogglesContainer {
     display: flex;
     flex-direction: column;
+    margin: 20px 20px 0 20px;
   }
 }

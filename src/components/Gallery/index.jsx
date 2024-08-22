@@ -22,9 +22,15 @@ function Slideshow({ pictures, title }) {
     }
   }
 
+  const totalCount = pictures.length;
+  const currentPicCount = currentIndex + 1;
+
   return (
     <div className="slideshowContainer">
       <img src={pictures[currentIndex]} alt={title} className="picture" />
+      <div className="picturesCount">
+        {currentPicCount}/{totalCount}
+      </div>
       {pictures.length === 1 ? null : (
         <div>
           <img
