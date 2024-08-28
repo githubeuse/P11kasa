@@ -9,16 +9,14 @@ function HousesList() {
       <div className="housesListContainer">
         {logements.map((logement) => (
           <div key={logement.id} className="houseCard">
-            <img
-              src={logement.cover}
-              alt={logement.title}
-              className="coverCard"
-            />
-            <div className="titleCard">
-              <Link to={`/fiche_logement/${logement.id}`}>
-                {logement.title}
-              </Link>
-            </div>
+            <Link to={`/fiche_logement/${logement.id}`}>
+              <img
+                src={logement.cover}
+                alt={logement.title}
+                className="coverCard"
+              />
+              <div className="titleCard">{logement.title}</div>
+            </Link>
           </div>
         ))}
       </div>
