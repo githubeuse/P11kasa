@@ -1,15 +1,8 @@
 import React from "react";
-// import { useLocation } from "react-router-dom";
-// import homeBanner from "../../assets/home_banner.png";
-// import aboutBanner from "../../assets/about_banner.png";
 
 import "../../styles/Banner/Banner.css";
 
 function Banner({ image, text }) {
-  // const location = useLocation();
-  // const banner = location.pathname === "/about" ? aboutBanner : homeBanner;
-  // const bannerText =
-  //   location.pathname === "/about" ? "" : "Chez vous, partout et ailleurs";
   const bannerText = text;
   const banner = image;
 
