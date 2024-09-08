@@ -4,7 +4,6 @@
 
 .toggle-button {
   font-weight: bold;
-  font-size: 24px;
   width: 100%;
   padding: 10px 20px;
   cursor: pointer;
@@ -38,6 +37,7 @@
 }
 
 .toggle-content {
+  font-size: 18px;
   padding-right: 15px;
   padding-left: 15px;
   font-weight: 500;
@@ -67,5 +67,11 @@
     transform: translateY(-30px); /* Décalage initial vers le bas */
     transition: max-height 0.6s ease-out, opacity 0.15s ease-out,
       transform 0.15s ease-out;
+  }
+}
+
+@media (max-width: 1080px) {
+  .toggle-content {
+    font-size: 12px;
   }
 }

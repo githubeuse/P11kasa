@@ -9,22 +9,32 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 50px;
 }
 
 .footerLogo {
   width: 122px;
   height: 39.44px;
-  padding-bottom: 52px;
+  padding-bottom: 22px;
   margin-top: 66px;
 }
 
 .footerParagraphs {
-  padding-bottom: 57px;
+  padding-bottom: 37px;
   display: flex;
   gap: 5px;
+  font-size: 24px;
+}
+
+.footerParagraphs p {
+  margin-block-end: 0;
 }
 
 @media (max-width: 720px) {
+  footer {
+    margin-top: 27px;
+    text-align: center;
+  }
   .footerLogo {
     margin-top: 66px;
     margin-bottom: 19px;
@@ -34,8 +44,9 @@ footer {
   }
   .footerParagraphs {
     width: 145px;
-    margin-bottom: 60px;
+    margin-bottom: 27px;
     flex-direction: column;
+    font-size: 12px;
   }
   .footerParagraphs p {
     margin-block: 0;

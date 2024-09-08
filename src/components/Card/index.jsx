@@ -62,7 +62,7 @@ function Card() {
         <Toggle title="Description">
           <p>{logement.description}</p>
         </Toggle>
-        <Toggle title="Equipements">
+        <Toggle title="Equipements" className="cardButton">
           <ul className="equipmentsList">
             {logement.equipments.map((equipment, index) => (
               <li key={index}>{equipment}</li>

@@ -2,3 +2,12 @@ body,
 button {
   font-family: "Montserrat", sans-serif;
 }
+.toggle-container button {
+  font-size: 18px;
+}
+
+@media (max-width: 1020px) {
+  .toggle-container button {
+    font-size: 13px;
+  }
+}

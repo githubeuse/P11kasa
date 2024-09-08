@@ -68,6 +68,7 @@
 .tag {
   background-color: #ff6060;
   padding: 5px;
+  margin-right: 10px;
   border: 0 transparent;
   border-radius: 10px;
   font-size: 14px;
@@ -92,7 +93,7 @@
   padding-inline-start: 0px;
 }
 
-@media (max-width: 1020px) {
+@media (max-width: 1080px) {
   .houseInfosContainer {
     margin-bottom: 20%;
   }
